@@ -1,0 +1,164 @@
+
+HOW TO RUN THE PROGRAMS:
+
+    There are 5 files in this folder (xyaoinum_hw1):
+
+    1.  hw1Cranfield.py
+        -- This python program deals with the Cranfield collection. It gives answers
+        for question 1, 2, 3 and 4. After running the program, the answers will be in
+        the output file "hw1ans1", "hw1ans2", "hw1ans3", and "hw1ans4" respectively.
+        During the running time, the terminal will indicate which output file has been done.
+        A "hw1ans4 done!" indicates the program fihishs writting all the 4 output files.
+        The program takes about 5 - 10 seconds to finish running when I was testing on
+        CAEN Red Hat.
+        
+    2.  hw1Crawler.py
+        -- This python program crawls the url of webpages in the umich domain starting
+        from http://www.eecs.umich.edu. It gives answers for question 5. After running the
+        program, the answers will be in the output file "hw1ans5". The terminal will also
+        show the result as the program runs. The running time varies when I was testing,
+        from 20 - 40 minutes (note there is a 1s waiting time between each url request).
+        A "hw1ans5 done!" indicates the program fihishs writting all the 1500 urls.
+
+    3.  stemmer.py
+        -- This python program gives a implementation of the Porter stemmer method which
+        was downloaded from the link in the course website. I utilize the functions in this
+        file to answer question 4.
+
+    4.  umichUrlList
+        -- This file contains explicitly the result from running "hw1Crawler.py", which has
+        1500 crawled url.
+
+    5.  README
+        -- This file. Containing the functionality of the program, instructions on running 
+        the program and explicit answers for questions.
+
+    Besides, in order that the program hw1Cranfield.py runs correctly, the tester need to
+    un-zip and copy the folder "cranfieldDocs" into this folder (xyaoinum_hw1).
+
+    The folder hierarchy is like this:
+
+    -- xyaoinum_hw1 -- hw1Cranfield.py
+                    -- hw1Crawler.py
+                    -- stemmer.py        
+                    -- umichUrlList
+                    -- README     
+                    -- cranfieldDocs -- cranfield0001
+                                     -- cranfield0002
+                                     ......
+                                     -- cranfield1400
+
+    In terminal, change to directory xyaoinum_hw1, and type "python hw1Cranfield.py" to run the
+    cranfield program, and type "python hw1Crawler.py" to run the crawler.
+
+ANSWERS for each question:
+
+Question 1:
+
+    As indicated by the instructor, it's large file and we shouldn't included it in this
+    submission. So please run the program "hw1Cranfield.py" and the result is in the output
+    file "hw1ans1".
+
+Question 2:
+
+    (a): 234480
+
+    (b): 12415
+
+    (c): 
+    token | occurence
+    --------------------
+    the    19451
+    of    12675
+    and    6671
+    a    6001
+    in    4646
+    to    4535
+    is    4113
+    for    3493
+    are    2429
+    with    2265
+    on    1942
+    at    1834
+    by    1749
+    flow    1739
+    that    1570
+    an    1388
+    be    1271
+    pressure    1133
+    from    1116
+    as    1112
+
+    (d): 
+    the
+    of
+    and
+    a
+    in
+    is
+    for
+    are
+    with
+    on
+    by
+    that
+    an
+    be
+    as
+
+    (e): 8
+
+Question 3:
+
+    beta = 0.592572809858
+    K = 8.59422101504
+
+Question 4:
+
+    (a): 156176
+
+    (b): 9679
+
+    (c): 
+    token | occurence
+    --------------------
+    to    4535
+    flow    1969
+    at    1834
+    number    1337
+    pressur    1308
+    from    1116
+    result    1086
+    effect    987
+    boundari    926
+    method    886
+    theori    871
+    layer    861
+    solut    849
+    mach    817
+    equat    778
+    bodi    740
+    us    732
+    wing    711
+    present    699
+    heat    686
+
+    (d): 
+    us
+
+Question 5: the answer is explicitly in the file "umichUrlList".
+
+
+ASSUMPTIONS AND NOTE for each question:
+    
+        There are a lot of note in the program file, which makes the program very readable and
+    contains all the assumptions, solutions, and note that I think necessary to point out.
+    Please open hw1Cranfield.py and hw1Crawler.py for detail.
+
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+
+HOW TO RUN THE PROGRAMS:
+
+    There are 5 files in this folder (xyaoinum_hw3):
+
+    1.  Q1.py
+        -- This python program generates answers for Q1. Answers are displayed in the terminal.
+        
+    2.  Q2.py
+        -- This python program generates answers for Q2. Answers are displayed in the terminal.
+
+    3.  stemmer.py
+        -- This python program gives a implementation of the Porter stemmer method which
+        was downloaded from the link in the course website. I utilize the functions in this
+        file to answer question 4.
+
+    4.  helper.py
+        -- This file contains some functions that is used in Q1.py and Q2.py.
+
+    5.  README
+        -- This file. Containing the functionality of the program, instructions on running 
+        the program and explicit answers for questions.
+
+    Besides, in order that the program runs correctly, the tester need to
+    un-zip and copy the folder "bestfriend.deception.training" and "language.identification"
+    into this folder (xyaoinum_hw3).
+
+    The folder hierarchy is like this:
+
+    -- xyaoinum_hw3 -- Q1.py
+                    -- Q2.py
+                    -- stemmer.py        
+                    -- helper.py
+                    -- README     
+                    -- bestfriend.deception.training -- ...
+		    -- language.identification -- ...
+						
+
+    In terminal, change to directory xyaoinum_hw3, and type "python Q1.py" to run the
+    first program, and type "python Q2.py" to run the second program.
+
+ANSWERS for each question:
+
+Question 1:
+	accuracy is 0.719387755102
+
+Question 2:
+	accuracy is 0.956666666667
+
+for evaluation and correctness of specific sentence/documents, please run the program,
+the detailed answer is given in the terminal.
+
+
+

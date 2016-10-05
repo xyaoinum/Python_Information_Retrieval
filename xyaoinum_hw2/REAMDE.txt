@@ -1,0 +1,127 @@
+FUNCTIONALITY OF EACH PROGRAM & HOW TO RUN THE PROGRAMS:
+	There are 7 files in this folder (xyaoinum_hw2):
+	1. Q1.py
+	-- program for question 1. Run the program, and in the terminal you will be prompted to give a query,
+	then, you will be prompted to enter the mode, "1" for TF/IDF, and "2" for normalized TF/IDF.
+	Then the program will calculat the corresponding weight, it takes about 5 seconds, and the result
+	will be shown on the terminal.
+
+	2. Q2.py
+	-- program for question 2. Run the program, and the result is shown in the terminal.It takes about
+	10 seconds.
+
+	3. Q3.py
+	-- program for question 3. Run the program, and the result will be shown in the terminal.
+	This may take 10-30 minutes because the program needs to access every webpages.
+
+	4. stemmer.py
+	-- This python program gives a implementation of the Porter stemmer method which
+        was downloaded from the link in the course website.
+
+	5. helper.py
+	-- this contains some helper functions that I use in Q1, Q2 and Q3.
+
+	6. umichUrlList
+	-- This file contains 1500 urls from the first assignment.
+
+	7. README
+	-- this file
+
+ Besides, in order that the program runs correctly, the tester need to
+ un-zip and copy the folder "cranfieldDocs" into this folder (xyaoinum_hw2).
+
+
+
+ANSWERS TO Q2 AND Q3:
+
+Q2:
+TF/IDF without normalization
+top 10 doc, precision, recall:  0.174222222222 0.24317617866
+top 50 doc, precision, recall:  0.0615111111111 0.429280397022
+top 100 doc, precision, recall:  0.0372 0.519230769231
+top 500 doc, precision, recall:  0.00959111111111 0.66935483871
+
+TF/IDF with normalization
+top 10 doc, precision, recall:  0.173333333333 0.241935483871
+top 50 doc, precision, recall:  0.0623111111111 0.434863523573
+top 100 doc, precision, recall:  0.0375555555556 0.524193548387
+top 500 doc, precision, recall:  0.00961777777778 0.671215880893
+
+Roughly, the TF/IDF with normalization gives slightly better result.
+Normalization is better because document may vary in length, and longer document
+will inherently have higher 'tf' without normalization, but this can be misleading.
+A word appearing 10 times in a document with 100 words is more important than a word
+appearing 15 times in a book with 1000000 words. So what's important is the relative
+frequency instead of the absolute frequency.
+
+
+Q3:
+
+query:  computer science
+result: 
+http://eecs.umich.edu/eecs/students/fin_aid.html						0
+http://www.eecs.umich.edu/eecs/about/articles/2011/Accessible_Messaging.html			0
+http://www.eecs.umich.edu/eecs/academics/courses.html						1
+http://cse.umich.edu/eecs/academics/courses.html						1
+http://www.ece.umich.edu/eecs/academics/courses.html						1
+http://ece.umich.edu/eecs/undergraduate/undergraduate_admissions.html				1
+http://cse.umich.edu/eecs/undergraduate/undergraduate_admissions.html				1
+http://eecs.umich.edu/eecs/undergraduate/undergraduate_admissions.html				0
+http://www.eecs.umich.edu/eecs/students/Student_Organizations.html				0
+http://www.cse.umich.edu/eecs/graduate/index.html						1
+
+
+query:  electrical engineering
+result: 
+http://eecs.umich.edu/eecs/students/fin_aid.html						0
+http://eecs.umich.edu/eecs/undergraduate/ugee/ee_studentprofiles.html				1
+http://www.eecs.umich.edu/ece/awards/students/grad/g_fellows.html				1
+http://www.eecs.umich.edu/ece/awards/students/grad/g_external.html				1
+http://eecs.umich.edu/ece/awards/students/grad/g_university.html				1
+http://eecs.umich.edu/ece/awards/students/ug/u_university.html					1
+http://www.eecs.umich.edu/eecs/about/articles/2013/mcubed-symposium.html			1
+http://eecs.umich.edu/ece/awards/students/courses/index.html					1
+http://www.eecs.umich.edu/eecs/academics/courses.html						1
+http://cse.umich.edu/eecs/academics/courses.html						1
+
+
+query:  undergrauate program
+result: 
+http://eecs.umich.edu/eecs/students/fin_aid.html						0
+http://www.eecs.umich.edu/eecs/graduate/phd-description.html					1
+http://www.eecs.umich.edu/eecs/graduate/ee/ee_How_to_transition_from_MS_to_PhD.html		0
+http://eecs.umich.edu/eecs/graduate/ms-description.html						0
+http://www.eecs.umich.edu/eecs/graduate/ee/ee_current.html					1
+http://eecs.umich.edu/eecs/graduate/ees/ees_How_to_transition_from_MS_to_PhD.html		0
+http://eecs.umich.edu/eecs/graduate/grad_admissions.html					0
+http://www.eecs.umich.edu/eecs/graduate/ees/ees_current.html					1
+http://eecs.umich.edu/eecs/visitors/student-visits.html						1
+http://cse.umich.edu/eecs/academics/courses.html						1
+
+
+query:  prospective students
+result: 
+http://eecs.umich.edu/eecs/visitors/student-visits.html						1
+http://internationalcenter.umich.edu/immig/e3visa/index.html					1
+http://eecs.umich.edu/eecs/graduate/ee/howtoapply.html						1
+http://www.eecs.umich.edu/eecs/graduate/ees/howtoapply.html					1
+http://eecs.umich.edu/eecs/graduate/ees/EESystemsgraduate.html					1
+http://eecs.umich.edu/cse/enews/2013-04.html							1
+http://internationalcenter.umich.edu/immig/h1bvisa/faq.html					1
+http://www.eecs.umich.edu/eecs/graduate/ee/eegradpage.html					1
+http://ssw.umich.edu/search/node/%22prospective%20student%20session%22/index.html		1
+http://cse.umich.edu/eecs/graduate/cse/apply/how.html						1
+
+
+query:  scholarships
+result: 
+http://eecs.umich.edu/eecs/students/fin_aid.html						1
+http://www.eecs.umich.edu/eecs/about/articles/2013/Zhang_Cheng-SPIE-Scholarship.html		1
+http://eecs.umich.edu/eecs/students/awards/undergraduate/index.html				1
+http://cse.umich.edu/giving/legacy.html								1
+http://www.engin.umich.edu/egl/index.html							1
+http://web.eecs.umich.edu/~jag/index.html							1
+http://www.umich.edu/~geecs/index.html								0
+http://www.engin.umich.edu/ipe/index.html							0
+http://www.internationalcenter.umich.edu/life/laws.html						1
+http://www.eecs.umich.edu/eecs/students/awards/undergraduate/05-06awards.html			1
